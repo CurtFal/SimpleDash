@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta property="og:title" content="SimpleDash">
+		<meta property="og:image" content="https://i.imgur.com/mVa88sq.png">
+		<meta property="og:description" content="A simple yet visually appealing dashboard">
+		<meta name="theme-color" content="#ff14d4">	
+		<title>SimpleDash</title>
+        <link rel = "icon" href ="https://i.imgur.com/1zshSpf.png"> 
+        <link rel="stylesheet" type="text/css" href="dash.css">
+        <script>
+    function myFunction(event) {
+      var x = event.which;
+      document.getElementById("output").innerHTML = "The Unicode value is: " + x;
+      if (x = 104 && x !=0 ){
+          unhide('help');
+      }
+      if (x = 97){
+        //window.location.href = "https://www.amazon.com/";
+      }
+      else{
+          document.getElementById("debug").innerHTML = "nothing";
+      }
+    }
+
+    function unhide(help) {
+        var item = document.getElementById(help);
+        if (item) {
+            if(item.className=='hidden'){
+                item.className = 'unhidden' ;
+            }else{
+                item.className = 'hidden';
+            }
+            
+        }
+    } 
+    </script>
+    </head>
+
+<body onkeypress="myFunction(event)">
+    <video playsinline autoplay muted loop poster="bg.gif" id="bgvid">
+        <source src="websitebg.mp4" type="video/mp4">
+      </video>
+      <header class="viewport-header">
+            f<canvas id="canvas" width="500" height="500" >cccc</canvas>
+      </header>
+    <div class="content">
+        <p id="output"></p>
+
+        <p id="debug"></p>
+
+        <p id="help" class="hidden">
+            H - Help Menu
+
+        </p>
+    </div>
+    
+    
+
+    <div class="footer">
+        <footer>
+            <p>press 'h' for help</p>
+        </footer>
+    </div>
+</body>
