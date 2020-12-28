@@ -55,13 +55,25 @@ html, body {
 }
 
 .viewport-header {
-    position: relative;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
+    width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:
+		-2px -2px 0 #FFFFFF,
+		2px -2px 0 #FFFFFF,
+		-2px 2px 0 #FFFFFF,
+		2px 2px 0 #FFFFFF;
+}
+
+iframe{
+    
+    box-shadow: 1px 1px 3px #000000;
+    background-color: #0000003d;
 }
 
 
